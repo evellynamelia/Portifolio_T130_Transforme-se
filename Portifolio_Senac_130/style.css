@@ -392,46 +392,28 @@ main > section{
   justify-content: center;
 }
 
-.avatar-ring{
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  padding: 6px;
-  background: conic-gradient(from 180deg, var(--pink), var(--purple), var(--pink));
+/* avatar da docente = mesma lógica das fotos de aluno (foto + emoji),
+   só que em tamanho maior por estar em destaque na Home */
+.docente-avatar{
+  position: relative;
+  width: min(80vw, 320px);
+  height: min(80vw, 320px);
 }
 
-.avatar-photo{
+.docente-foto{
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  background: linear-gradient(160deg, #3a1d5e, #1c0f34);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 3.2rem;
-  font-weight: 700;
-  color: rgba(255,255,255,0.35);
-  border: 1px solid var(--panel-border);
-}
-
-.doodle{
-  position: absolute;
-  width: 110px;
-  height: 110px;
-  opacity: 0.55;
-}
-
-.doodle-docente{
-  top: -10px;
-  right: 6%;
-}
-
-/* foto real da docente (já vem com moldura, glow e doodle prontos) */
-.docente-photo-real{
-  width: min(100%, 420px);
-  height: auto;
+  object-fit: contain;
   display: block;
+}
+
+.docente-emoji{
+  position: absolute;
+  top: -6%;
+  right: -10%;
+  width: 34%;
+  height: auto;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
 }
 
 /* =========================================================
@@ -501,7 +483,6 @@ main > section{
   border-radius: var(--radius-lg);
   padding: 40px 28px 32px;
   text-align: center;
-  overflow: hidden;
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
@@ -517,20 +498,32 @@ main > section{
   height: 92px;
 }
 
-.aluno-photo{
+/* container da foto + emoji de cada aluno */
+.aluno-media{
+  position: relative;
   width: 118px;
   height: 118px;
   margin: 0 auto 22px;
+}
+
+.aluno-foto{
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  background: linear-gradient(160deg, #3a1d5e, #200f38);
+  object-fit: cover;
   border: 3px solid var(--pink);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: rgba(255,255,255,0.55);
+  background: linear-gradient(160deg, #3a1d5e, #200f38);
+  display: block;
+}
+
+.aluno-emoji{
+  position: absolute;
+  top: -20px;
+  right: -26px;
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.35));
 }
 
 .aluno-nome{

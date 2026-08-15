@@ -26,10 +26,10 @@
       <li><a href="index.html">INICIO</a></li>
       <li><a href="quem-somos.html">QUEM SOMOS</a></li>
       <li><a href="alunos.html">ALUNOS</a></li>
-      <li><a href="404.html">DOCENTE</a></li>
-      <li><a href="404.html">PROJETOS</a></li>
-      <li><a href="404.html">ROADMAP</a></li>
-      <li><a href="404.html">CONTATOS</a></li>
+      <li><a href="docente.html">DOCENTE</a></li>
+      <li><a href="projetos.html">PROJETOS</a></li>
+      <li><a href="roadmap.html">ROADMAP</a></li>
+      <li><a href="contatos.html">CONTATOS</a></li>
     </ul>
   </nav>
 </header>
@@ -91,7 +91,12 @@
       </blockquote>
     </div>
     <div class="docente-media">
-      <img class="docente-photo-real" src="assets/docente.png" alt="Foto da professora Radassila Silva">
+      <div class="docente-avatar">
+        <!-- FOTO da professora: troque o arquivo em assets/, mantendo este mesmo nome -->
+        <img class="docente-foto" src="assets/docente-foto.png" alt="Foto da professora Radassila Silva">
+        <!-- EMOJI/desenho da professora: troque o arquivo em assets/, mantendo este mesmo nome -->
+        <img class="docente-emoji" src="assets/docente-emoji.png" alt="">
+      </div>
     </div>
   </section>
 
@@ -139,7 +144,152 @@
     <h2 class="section-title">CONHEÇA A <span class="pink">TURMA</span></h2>
 
     <div class="carousel alunos-carousel">
-      <div class="carousel-track" id="alunosCarouselTrack"></div>
+      <div class="carousel-track" id="alunosCarouselTrack">
+      <div class="carousel-slide">
+        <div class="aluno-card aluno-card-clickable" id="evellyn-gomes" data-href="alunos.html#evellyn-gomes" data-categorias="designer uxui marketing" data-nome="evellyn gomes" tabindex="0">
+          <div class="aluno-media">
+            <!-- FOTO do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-foto" src="assets/alunos/evellyn-gomes-foto.png" alt="Foto de Evellyn Gomes">
+            <!-- EMOJI/desenho do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-emoji" src="assets/alunos/evellyn-gomes-emoji.png" alt="">
+          </div>
+          <h3 class="aluno-nome">Evellyn Gomes</h3>
+          <p class="aluno-cargo">Designer UX/UI, Marketing Digital</p>
+          <!-- Links do aluno: troque o endereço dentro das aspas de cada href -->
+          <div class="aluno-social">
+            <a href="COLOQUE_O_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener" aria-label="LinkedIn de Evellyn Gomes"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5zM.4 8.75h4.16V23H.4V8.75zM8.34 8.75h3.99v1.95h.06c.56-1.02 1.92-2.1 3.95-2.1 4.22 0 5 2.7 5 6.22V23h-4.16v-6.75c0-1.61-.03-3.68-2.25-3.68-2.25 0-2.6 1.75-2.6 3.56V23H8.34V8.75z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_GITHUB_AQUI" target="_blank" rel="noopener" aria-label="GitHub de Evellyn Gomes"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.03c0 5.03 3.27 9.3 7.8 10.8.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 015.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A10.53 10.53 0 0023.5 12.03C23.5 5.74 18.27.5 12 .5z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_INSTAGRAM_AQUI" target="_blank" rel="noopener" aria-label="Instagram de Evellyn Gomes"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41a3.72 3.72 0 01-1.38-.89 3.72 3.72 0 01-.89-1.38c-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 5.35a4.49 4.49 0 100 8.98 4.49 4.49 0 000-8.98zm0 7.41a2.92 2.92 0 110-5.84 2.92 2.92 0 010 5.84zm5.72-7.59a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="aluno-card aluno-card-clickable" id="dacyrrose-pessoa" data-href="alunos.html#dacyrrose-pessoa" data-categorias="desenvolvimento" data-nome="dacyrrôse pessoa" tabindex="0">
+          <div class="aluno-media">
+            <!-- FOTO do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-foto" src="assets/alunos/dacyrrose-pessoa-foto.png" alt="Foto de Dacyrrôse Pessoa">
+            <!-- EMOJI/desenho do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-emoji" src="assets/alunos/dacyrrose-pessoa-emoji.png" alt="">
+          </div>
+          <h3 class="aluno-nome">Dacyrrôse Pessoa</h3>
+          <p class="aluno-cargo">Desenvolvimento Full-Stack</p>
+          <!-- Links do aluno: troque o endereço dentro das aspas de cada href -->
+          <div class="aluno-social">
+            <a href="COLOQUE_O_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener" aria-label="LinkedIn de Dacyrrôse Pessoa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5zM.4 8.75h4.16V23H.4V8.75zM8.34 8.75h3.99v1.95h.06c.56-1.02 1.92-2.1 3.95-2.1 4.22 0 5 2.7 5 6.22V23h-4.16v-6.75c0-1.61-.03-3.68-2.25-3.68-2.25 0-2.6 1.75-2.6 3.56V23H8.34V8.75z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_GITHUB_AQUI" target="_blank" rel="noopener" aria-label="GitHub de Dacyrrôse Pessoa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.03c0 5.03 3.27 9.3 7.8 10.8.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 015.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A10.53 10.53 0 0023.5 12.03C23.5 5.74 18.27.5 12 .5z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_INSTAGRAM_AQUI" target="_blank" rel="noopener" aria-label="Instagram de Dacyrrôse Pessoa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41a3.72 3.72 0 01-1.38-.89 3.72 3.72 0 01-.89-1.38c-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 5.35a4.49 4.49 0 100 8.98 4.49 4.49 0 000-8.98zm0 7.41a2.92 2.92 0 110-5.84 2.92 2.92 0 010 5.84zm5.72-7.59a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="aluno-card aluno-card-clickable" id="sabrina-vitoria" data-href="alunos.html#sabrina-vitoria" data-categorias="backend" data-nome="sabrina vitoria" tabindex="0">
+          <div class="aluno-media">
+            <!-- FOTO do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-foto" src="assets/alunos/sabrina-vitoria-foto.png" alt="Foto de Sabrina Vitoria">
+            <!-- EMOJI/desenho do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-emoji" src="assets/alunos/sabrina-vitoria-emoji.png" alt="">
+          </div>
+          <h3 class="aluno-nome">Sabrina Vitoria</h3>
+          <p class="aluno-cargo">Backend</p>
+          <!-- Links do aluno: troque o endereço dentro das aspas de cada href -->
+          <div class="aluno-social">
+            <a href="COLOQUE_O_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener" aria-label="LinkedIn de Sabrina Vitoria"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5zM.4 8.75h4.16V23H.4V8.75zM8.34 8.75h3.99v1.95h.06c.56-1.02 1.92-2.1 3.95-2.1 4.22 0 5 2.7 5 6.22V23h-4.16v-6.75c0-1.61-.03-3.68-2.25-3.68-2.25 0-2.6 1.75-2.6 3.56V23H8.34V8.75z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_GITHUB_AQUI" target="_blank" rel="noopener" aria-label="GitHub de Sabrina Vitoria"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.03c0 5.03 3.27 9.3 7.8 10.8.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 015.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A10.53 10.53 0 0023.5 12.03C23.5 5.74 18.27.5 12 .5z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_INSTAGRAM_AQUI" target="_blank" rel="noopener" aria-label="Instagram de Sabrina Vitoria"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41a3.72 3.72 0 01-1.38-.89 3.72 3.72 0 01-.89-1.38c-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 5.35a4.49 4.49 0 100 8.98 4.49 4.49 0 000-8.98zm0 7.41a2.92 2.92 0 110-5.84 2.92 2.92 0 010 5.84zm5.72-7.59a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="aluno-card aluno-card-clickable" id="andrea-veronica" data-href="alunos.html#andrea-veronica" data-categorias="marketing" data-nome="andréa verônica" tabindex="0">
+          <div class="aluno-media">
+            <!-- FOTO do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-foto" src="assets/alunos/andrea-veronica-foto.png" alt="Foto de Andréa Verônica">
+            <!-- EMOJI/desenho do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-emoji" src="assets/alunos/andrea-veronica-emoji.png" alt="">
+          </div>
+          <h3 class="aluno-nome">Andréa Verônica</h3>
+          <p class="aluno-cargo">Marketing Digital</p>
+          <!-- Links do aluno: troque o endereço dentro das aspas de cada href -->
+          <div class="aluno-social">
+            <a href="COLOQUE_O_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener" aria-label="LinkedIn de Andréa Verônica"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5zM.4 8.75h4.16V23H.4V8.75zM8.34 8.75h3.99v1.95h.06c.56-1.02 1.92-2.1 3.95-2.1 4.22 0 5 2.7 5 6.22V23h-4.16v-6.75c0-1.61-.03-3.68-2.25-3.68-2.25 0-2.6 1.75-2.6 3.56V23H8.34V8.75z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_GITHUB_AQUI" target="_blank" rel="noopener" aria-label="GitHub de Andréa Verônica"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.03c0 5.03 3.27 9.3 7.8 10.8.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 015.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A10.53 10.53 0 0023.5 12.03C23.5 5.74 18.27.5 12 .5z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_INSTAGRAM_AQUI" target="_blank" rel="noopener" aria-label="Instagram de Andréa Verônica"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41a3.72 3.72 0 01-1.38-.89 3.72 3.72 0 01-.89-1.38c-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 5.35a4.49 4.49 0 100 8.98 4.49 4.49 0 000-8.98zm0 7.41a2.92 2.92 0 110-5.84 2.92 2.92 0 010 5.84zm5.72-7.59a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="aluno-card aluno-card-clickable" id="lucas-leite" data-href="alunos.html#lucas-leite" data-categorias="desenvolvimento" data-nome="lucas leite" tabindex="0">
+          <div class="aluno-media">
+            <!-- FOTO do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-foto" src="assets/alunos/lucas-leite-foto.png" alt="Foto de Lucas Leite">
+            <!-- EMOJI/desenho do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-emoji" src="assets/alunos/lucas-leite-emoji.png" alt="">
+          </div>
+          <h3 class="aluno-nome">Lucas Leite</h3>
+          <p class="aluno-cargo">Desenvolvimento Full-Stack</p>
+          <!-- Links do aluno: troque o endereço dentro das aspas de cada href -->
+          <div class="aluno-social">
+            <a href="COLOQUE_O_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener" aria-label="LinkedIn de Lucas Leite"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5zM.4 8.75h4.16V23H.4V8.75zM8.34 8.75h3.99v1.95h.06c.56-1.02 1.92-2.1 3.95-2.1 4.22 0 5 2.7 5 6.22V23h-4.16v-6.75c0-1.61-.03-3.68-2.25-3.68-2.25 0-2.6 1.75-2.6 3.56V23H8.34V8.75z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_GITHUB_AQUI" target="_blank" rel="noopener" aria-label="GitHub de Lucas Leite"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.03c0 5.03 3.27 9.3 7.8 10.8.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 015.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A10.53 10.53 0 0023.5 12.03C23.5 5.74 18.27.5 12 .5z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_INSTAGRAM_AQUI" target="_blank" rel="noopener" aria-label="Instagram de Lucas Leite"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41a3.72 3.72 0 01-1.38-.89 3.72 3.72 0 01-.89-1.38c-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 5.35a4.49 4.49 0 100 8.98 4.49 4.49 0 000-8.98zm0 7.41a2.92 2.92 0 110-5.84 2.92 2.92 0 010 5.84zm5.72-7.59a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="aluno-card aluno-card-clickable" id="maria-elisa" data-href="alunos.html#maria-elisa" data-categorias="frontend" data-nome="maria elisa" tabindex="0">
+          <div class="aluno-media">
+            <!-- FOTO do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-foto" src="assets/alunos/maria-elisa-foto.png" alt="Foto de Maria Elisa">
+            <!-- EMOJI/desenho do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-emoji" src="assets/alunos/maria-elisa-emoji.png" alt="">
+          </div>
+          <h3 class="aluno-nome">Maria Elisa</h3>
+          <p class="aluno-cargo">Front-End</p>
+          <!-- Links do aluno: troque o endereço dentro das aspas de cada href -->
+          <div class="aluno-social">
+            <a href="COLOQUE_O_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener" aria-label="LinkedIn de Maria Elisa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5zM.4 8.75h4.16V23H.4V8.75zM8.34 8.75h3.99v1.95h.06c.56-1.02 1.92-2.1 3.95-2.1 4.22 0 5 2.7 5 6.22V23h-4.16v-6.75c0-1.61-.03-3.68-2.25-3.68-2.25 0-2.6 1.75-2.6 3.56V23H8.34V8.75z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_GITHUB_AQUI" target="_blank" rel="noopener" aria-label="GitHub de Maria Elisa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.03c0 5.03 3.27 9.3 7.8 10.8.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 015.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A10.53 10.53 0 0023.5 12.03C23.5 5.74 18.27.5 12 .5z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_INSTAGRAM_AQUI" target="_blank" rel="noopener" aria-label="Instagram de Maria Elisa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41a3.72 3.72 0 01-1.38-.89 3.72 3.72 0 01-.89-1.38c-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 5.35a4.49 4.49 0 100 8.98 4.49 4.49 0 000-8.98zm0 7.41a2.92 2.92 0 110-5.84 2.92 2.92 0 010 5.84zm5.72-7.59a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="aluno-card aluno-card-clickable" id="adrielly-alexandra" data-href="alunos.html#adrielly-alexandra" data-categorias="backend designer" data-nome="adrielly alexandra" tabindex="0">
+          <div class="aluno-media">
+            <!-- FOTO do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-foto" src="assets/alunos/adrielly-alexandra-foto.png" alt="Foto de Adrielly Alexandra">
+            <!-- EMOJI/desenho do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-emoji" src="assets/alunos/adrielly-alexandra-emoji.png" alt="">
+          </div>
+          <h3 class="aluno-nome">Adrielly Alexandra</h3>
+          <p class="aluno-cargo">Back-end Developer, Cybersegurança e Design</p>
+          <!-- Links do aluno: troque o endereço dentro das aspas de cada href -->
+          <div class="aluno-social">
+            <a href="COLOQUE_O_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener" aria-label="LinkedIn de Adrielly Alexandra"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5zM.4 8.75h4.16V23H.4V8.75zM8.34 8.75h3.99v1.95h.06c.56-1.02 1.92-2.1 3.95-2.1 4.22 0 5 2.7 5 6.22V23h-4.16v-6.75c0-1.61-.03-3.68-2.25-3.68-2.25 0-2.6 1.75-2.6 3.56V23H8.34V8.75z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_GITHUB_AQUI" target="_blank" rel="noopener" aria-label="GitHub de Adrielly Alexandra"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.03c0 5.03 3.27 9.3 7.8 10.8.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 015.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A10.53 10.53 0 0023.5 12.03C23.5 5.74 18.27.5 12 .5z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_INSTAGRAM_AQUI" target="_blank" rel="noopener" aria-label="Instagram de Adrielly Alexandra"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41a3.72 3.72 0 01-1.38-.89 3.72 3.72 0 01-.89-1.38c-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 5.35a4.49 4.49 0 100 8.98 4.49 4.49 0 000-8.98zm0 7.41a2.92 2.92 0 110-5.84 2.92 2.92 0 010 5.84zm5.72-7.59a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="aluno-card aluno-card-clickable" id="caio-cesar" data-href="alunos.html#caio-cesar" data-categorias="desenvolvimento frontend" data-nome="caio cesar" tabindex="0">
+          <div class="aluno-media">
+            <!-- FOTO do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-foto" src="assets/alunos/caio-cesar-foto.png" alt="Foto de Caio Cesar">
+            <!-- EMOJI/desenho do aluno: troque o arquivo em assets/alunos/, mantendo este mesmo nome -->
+            <img class="aluno-emoji" src="assets/alunos/caio-cesar-emoji.png" alt="">
+          </div>
+          <h3 class="aluno-nome">Caio Cesar</h3>
+          <p class="aluno-cargo">Desenvolvimento Front-End</p>
+          <!-- Links do aluno: troque o endereço dentro das aspas de cada href -->
+          <div class="aluno-social">
+            <a href="COLOQUE_O_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener" aria-label="LinkedIn de Caio Cesar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5zM.4 8.75h4.16V23H.4V8.75zM8.34 8.75h3.99v1.95h.06c.56-1.02 1.92-2.1 3.95-2.1 4.22 0 5 2.7 5 6.22V23h-4.16v-6.75c0-1.61-.03-3.68-2.25-3.68-2.25 0-2.6 1.75-2.6 3.56V23H8.34V8.75z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_GITHUB_AQUI" target="_blank" rel="noopener" aria-label="GitHub de Caio Cesar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.74.5 12.03c0 5.03 3.27 9.3 7.8 10.8.57.1.78-.25.78-.55v-2.15c-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 015.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A10.53 10.53 0 0023.5 12.03C23.5 5.74 18.27.5 12 .5z"/></svg></a>
+            <a href="COLOQUE_O_LINK_DO_INSTAGRAM_AQUI" target="_blank" rel="noopener" aria-label="Instagram de Caio Cesar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.23.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.23-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.23-.41a3.72 3.72 0 01-1.38-.89 3.72 3.72 0 01-.89-1.38c-.17-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 5.35a4.49 4.49 0 100 8.98 4.49 4.49 0 000-8.98zm0 7.41a2.92 2.92 0 110-5.84 2.92 2.92 0 010 5.84zm5.72-7.59a1.05 1.05 0 11-2.1 0 1.05 1.05 0 012.1 0z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      </div>
       <div class="carousel-controls">
         <button class="carousel-arrow carousel-prev" aria-label="Aluno anterior">←</button>
         <div class="carousel-dots"></div>
