@@ -237,7 +237,7 @@ main > section{
    ========================================================= */
 .hero{
   display: grid;
-  grid-template-columns: 0.95fr 1.15fr;
+  grid-template-columns: 0.9fr 2.4fr;
   gap: 50px;
   align-items: center;
   padding-top: 70px !important;
@@ -396,8 +396,8 @@ main > section{
    só que em tamanho maior por estar em destaque na Home */
 .docente-avatar{
   position: relative;
-  width: min(80vw, 320px);
-  height: min(80vw, 320px);
+  width: min(75vw, 800px);
+  height: min(75vw, 800px);
 }
 
 .docente-foto{
@@ -409,9 +409,9 @@ main > section{
 
 .docente-emoji{
   position: absolute;
-  top: -6%;
-  right: -10%;
-  width: 34%;
+  top: 5%;
+  right: 2%;
+  width: 45%;
   height: auto;
   filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
 }
@@ -654,13 +654,15 @@ main > section{
 .qs-hero{
   max-width: var(--container);
   margin: 0 auto;
-  padding: 60px 20px 0;
+  padding: 5px 20px 0px;   
   text-align: center;
 }
 
 .qs-hero-photo{
-  aspect-ratio: 21 / 9;
   margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .qs-title{
@@ -782,6 +784,7 @@ main > section{
   justify-content: center;
   gap: 18px;
   margin-top: 22px;
+  margin-bottom: 30px;
 }
 
 .carousel-arrow{
